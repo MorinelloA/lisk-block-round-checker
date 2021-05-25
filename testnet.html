@@ -1,0 +1,33 @@
+<html>
+	<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="testnet.js"></script>
+    <script src="loadblocks.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Lisk Block Rounds</title>
+	</head>
+	
+	<body>
+    <div class="jumbotron">
+      <h1 class="display-6">Last 50 Block Rounds</h1>
+      <div class="lead">Testnet</div>
+    </div>
+
+    <h1 style="display:none" id="loadingmsg"><i>Loading...</i></h1>
+
+    <div class="form-group row">
+      <label for='delegates' class="col-sm-3">Delegate:</label>
+      <select class="col-sm-4" style="display:block" id="delegates" onchange="loadBlocks()">
+      </select>
+  </div>
+
+    <ul id="blocklist" class="list-group">
+    </ul>
+
+    <br>
+    <div class="card-footer text-white bg-dark text-center py-3 blue">
+      Developed by <a href="https://explorer.lisk.io/delegate/15297866638783057016L">TonyT908</a>
+    </div>
+  </body>
+</html>
